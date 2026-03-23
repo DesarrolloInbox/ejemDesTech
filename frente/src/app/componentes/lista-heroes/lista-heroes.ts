@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ArticuloHeroe } from "../articulo-heroe/articulo-heroe";
 import { Heroe } from '../../compartido/interfaces/heroe.interface';
+import { CambioPoderHeroe } from '../../compartido/interfaces/cambiopoderHeroe';
 
 @Component({
   selector: 'app-lista-heroes',
@@ -55,5 +56,9 @@ export class ListaHeroes {
       combat: 65,
     },
   }
-]
+  ]
+
+  guardaNuevoPoder({heroe, poder, valor} : CambioPoderHeroe){
+    heroe.poderes[poder]+= valor
+  }
 }
