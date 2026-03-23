@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #4f46e5;
+  --text-main: #1f2937;
+  --text-sub: #6b7280;
+  --bg-card: #ffffff;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card {
+  width: 320px;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px auto;
+}
+
+/* Efecto Hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.card-title {
+  margin: 10px 0;
+  font-size: 1.25rem;
+  color: var(--text-main);
+}
+
+.card-description {
+  font-size: 0.9rem;
+  color: var(--text-sub);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.card-btn:hover {
+  opacity: 0.9;
+}
+
+.villano {
+  background-color: #4f46e5;
+}

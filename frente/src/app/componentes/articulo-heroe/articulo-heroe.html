@@ -1,0 +1,17 @@
+<div [class]="esVillano ? 'card villano' : 'card'">
+  <div class="card-image">
+    <img [src]="heroe.image" alt="Héroe">
+  </div>
+  <div class="card-content">
+    <h2 class="card-title">{{heroe.name}}</h2>
+    <div class="card-description">
+      <div> inteligencia: {{heroe.poderes.intelligence}} <button [disabled]="heroe.poderes.intelligence===100" (click)="incrementaPoder('intelligence')">+</button> <button  [disabled]="heroe.poderes.intelligence===0" (click)="decrementaPoder('intelligence')">-</button> </div>
+      <div> fuerz {{heroe.poderes.strength}} <button [disabled]="heroe.poderes.strength===100" (click)="incrementaPoder('strength')">+</button> <button  [disabled]="heroe.poderes.strength===0" (click)="decrementaPoder('strength')">-</button> </div>
+      <div> velcdidad{{heroe.poderes.speed}} <button [disabled]="heroe.poderes.speed===100" (click)="incrementaPoder('speed')">+</button> <button  [disabled]="heroe.poderes.speed===0" (click)="decrementaPoder('speed')">-</button> </div>
+      <div> durab {{heroe.poderes.durability}} <button [disabled]="heroe.poderes.durability===100" (click)="incrementaPoder('durability')">+</button> <button  [disabled]="heroe.poderes.durability===0" (click)="decrementaPoder('durability')">-</button> </div>
+      <div> poder {{heroe.poderes.power}} <button [disabled]="heroe.poderes.power===100" (click)="incrementaPoder('power')">+</button> <button  [disabled]="heroe.poderes.power===0" (click)="decrementaPoder('power')">-</button> </div>
+      <div> combate {{heroe.poderes.combat}} <button [disabled]="heroe.poderes.combat===100" (click)="incrementaPoder('combat')">+</button> <button  [disabled]="heroe.poderes.combat===0" (click)="decrementaPoder('combat')">-</button> </div>
+    </div>
+    <!-- <button class="card-btn">Leer más</button> -->
+  </div>
+</div>
